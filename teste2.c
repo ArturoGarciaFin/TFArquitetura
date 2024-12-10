@@ -1,13 +1,15 @@
 #include <stdio.h>
 
-#define PATTERN_LENGTH 16 //Numero a ser mudado dependendo do codigo a ser testado
-#define LOOPS 1000000 //Numero de loops
+// Numero de iteracoes
+#define LOOPS 10000000 
+#define PATTERN_LENGTH 2
 
 int main() {
-	volatile int a = 0;
-	for (unsigned long i = 0; i < LOOPS; ++i) {
-    	if ((i % PATTERN_LENGTH) != 0)  // "Spy" branch com padrão
-        	a++;
-	}
-	return 0;
+    volatile int a = 0;
+    for (unsigned long i = 0; i < LOOPS; ++i) {
+        // "Spy" branch com padrao
+        if ((i % PATTERN_LENGTH) != 0) 
+            a++;
+    }
+    return 0;
 }
