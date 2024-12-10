@@ -1,0 +1,30 @@
+Resultados dos testes do componente BTB:
+
+NBTB             Distance       Branch Instructions        Branch Mispredictions
+512                 1              1,971,244,352                  0
+512                 4              1,036,823,328                  0
+512                 6              1,126,425,344                  0
+512                 8               755,216,992                   0
+4025                1              15,744,354,240            12,800,288
+4025                4              4,569,702,816                  0
+4025                6              2,060,846,368                  0
+4025                8              2,073,646,656                  0
+4025               256                   0                        0
+4025               512                   0                        0
+
+
+Resultados dos testes do preditor de desvios:
+
+PATTERN LENGTH      Branch Instructions         Branch Mispredictions
+       2                     0                             0
+       4                     0                             0
+       8                 12,800,288                        0
+       16                64,001,440                        0
+
+
+Resultados dos testes de verificacao de existencia de preditor global:
+
+PATTERN LENGTH A     PATTERN LENGTH         Branch Instructions         Branch Mispredictions
+       2                    3                        0                             0
+       4                    4                    16,403,744                        0
+       5                    7                        0                             0
